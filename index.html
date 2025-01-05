@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique de Toiles Professionnelles</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="website icon" type="jpg" href="G1.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <!-- Bandeau supérieur -->
+    <header class="header">
+        <div class="logo"href="contact.html">ArtGallery</div>
+		<nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="about.html">À Propos</a></li>
+
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="checkout.html"><img src="panier.png" alt="Panier" class="cart-icon"></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Découvrez l'Élégance sur Toile</h1>
+            <p>Des œuvres uniques pour sublimer vos espaces.</p>
+            <button onclick="scrollToGallery()">Découvrir les collections</button>
+        </div>
+    </section>
+
+
+    <!-- Galerie -->
+    <section class="gallery" id="gallery">
+        <h2>Nos Toiles Phare</h2>
+        <div class="gallery-grid">
+            <div class="card">
+                <img src="tab_stvictoire.jpg" alt="Toile 1">
+                <h3>Toile Éclatante</h3>
+                <p>120€</p>
+                <a href="toile-details.html"class="button">Voir le produit</a>
+            </div>
+            <div class="card">
+                <img src="tab_citron.jpg" alt="Toile 2">
+                <h3>Toile Sérénité</h3>
+                <p>150€</p>
+                <a href="toile-details2.html"class="button">Voir le produit</a>
+            </div>
+            <div class="card">
+                <img src="tab_eccureuil.jpg" alt="Toile 3">
+                <h3>Toile Abstraite</h3>
+                <p>200€</p>
+                <a href="toile-details3.html"class="button">Voir le produit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <h2>Ce que disent nos clients</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">"Des toiles magnifiques, un service impeccable ! La qualité est au rendez-vous, je recommande. Un véritable coup de cœur pour ces œuvres d'art."</div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ArtGallery. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="facebook.com">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Popup Promotionnelle -->
+    <div id="promo-popup" class="popup">
+        <div class="popup-content">
+            <p>Profitez de 10% de réduction avec le code <strong>TOILE10</strong> !</p>
+            <button onclick="closePopup()">Fermer</button>
+        </div>
+    </div>
+</body>
+</html>

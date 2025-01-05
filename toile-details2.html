@@ -1,0 +1,87 @@
+ <!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Toile</title>
+    <link rel="stylesheet" href="styles-details.css">
+	<link rel="website icon" type="jpg" href="G1.jpg">
+    <script src="script-details.js" defer></script>
+</head>
+<body>
+        <!-- Bandeau supérieur -->
+    <header class="header">
+        <div class="logo"href="contact.html">ArtGallery</div>
+		<nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="about.html">À Propos</a></li>
+
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="checkout.html"><img src="panier.png" alt="Panier" class="cart-icon"></a>
+        </div>
+    </header>
+
+    <!-- Section Détails de la Toile -->
+    <main class="toile-details">
+        <div class="toile-image">
+            <img src="tab_citron.jpg" alt="Toile d'art">
+        </div>
+        <div class="toile-info">
+            <h2 id="toile-title">Les Citrons</h2>
+            <p>Une composition lumineuse où des citrons frais reposent dans un panier rustique. Les nuances jaunes vives et les jeux d'ombre créent une ambiance chaleureuse et méditerranéenne.</p>
+            <p id="toile-price">Prix : 600€</p>
+            <a href="gallery.html" class="back-button">← Retour à la Galerie</a>
+            <button id="add-to-cart" class="add-to-cart-btn">Ajouter au Panier</button>
+        </div>
+    </main>
+
+    <!-- Notification d'ajout au panier -->
+    <div id="notification" class="added-notification" style="display: none;"></div>
+
+    <!-- Informations supplémentaires -->
+    <section class="additional-info">
+        <h2>Informations supplémentaires</h2>
+        <ul>
+            <li><strong>Matériaux :</strong> Huile sur toile</li>
+            <li><strong>Dimensions :</strong> 12 x 21 cm</li>
+            <li><strong>Technique :</strong> Peinture </li>
+        </ul>
+    </section>
+
+    <!-- Toiles similaires -->
+    <section class="similar-toiles">
+        <h2>Toiles Similaires</h2>
+        <div class="toiles-grid">
+            <div class="card">
+                <img src="tab_stvictoire.jpg" alt="Toile Nature">
+                <h3> La montagne sainte victoire </h3>
+                <a href="toile-details.html" class="details-button">Voir les détails</a>
+            </div>
+            <div class="card">
+                <img src="tab_eccureuil.jpg" alt="Toile Moderne">
+                <h3>l'écureuil et les cerises </h3>
+                <a href="toile-details3.html" class="details-button">Voir les détails</a>
+            </div>
+            <div class="card">
+                <img src="tab_oiseau.jpg" alt="Toile Classique">
+                <h3>l'oiseau bleu </h3>
+                <a href="toile-details5.html" class="details-button">Voir les détails</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ArtGallery. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

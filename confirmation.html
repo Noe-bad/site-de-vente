@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Commande</title>
+    <link rel="stylesheet" href="styles-confirmation.css">
+	<link rel="website icon" type="jpg" href="G1.jpg">
+    <script src="script-confirmation.js" defer></script>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="confirmation-header">
+            <h1>🎉 Confirmation de Commande</h1>
+            <p>Merci pour votre commande ! Votre satisfaction est notre priorité.</p>
+        </div>
+
+        <div class="confirmation-status">
+            <span class="status-icon">✅</span>
+            <h2>Paiement Approuvé</h2>
+        </div>
+
+        <div class="order-summary">
+            <h3>📋 Détails de la Commande</h3>
+            <ul>
+                <li><strong>Numéro de commande :</strong> <span id="order-id"></span></li>
+                <li><strong>Date :</strong> <span id="order-date"></span></li>
+                <li><strong>Nom du client :</strong> <span id="customer-name"></span></li>
+                <li><strong>Adresse de livraison :</strong> <span id="delivery-address"></span></li>
+                <li><strong>Mode de livraison :</strong> <span id="delivery-method"></span></li>
+            </ul>
+        </div>
+
+		<div class="item-summary">
+			<h3>🛍️ Articles Commandés</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Image</th>
+					<th>Article</th>
+						<th>Prix Unitaire</th>
+						<th>Quantité</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody id="items-list">
+				<!-- Les articles seront injectés ici via JavaScript -->
+				</tbody>
+			</table>
+		</div>
+
+
+        <div class="payment-summary">
+            <h3>💳 Détails du Paiement</h3>
+            <ul>
+                <li><strong>Mode de paiement :</strong> <span id="payment-method"></span></li>
+                <li><strong>4 derniers chiffres :</strong> <span id="card-last4"></span></li>
+                <li><strong>Statut :</strong> Approuvé ✅</li>
+            </ul>
+        </div>
+
+        <div class="total-summary">
+            <h3>💵 Total de la Commande</h3>
+            <p><strong>Total :</strong> <span id="order-total"></span></p>
+        </div>
+
+        <div class="confirmation-buttons">
+            <button onclick="window.print()" class="btn-print">🖨️ Imprimer la Facture</button>
+            <a href="index.html" class="btn-home">🏠 Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>

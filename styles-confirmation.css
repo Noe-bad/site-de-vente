@@ -1,0 +1,107 @@
+/* --- Style Général --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* --- Conteneur Principal --- */
+.confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- En-tête --- */
+.confirmation-header h1 {
+    color: #555;
+    font-size: 2rem;
+}
+
+.confirmation-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Statut de la Commande --- */
+.confirmation-status {
+    margin: 20px 0;
+}
+
+.status-icon {
+    font-size: 3rem;
+    color: #4CAF50;
+}
+
+/* --- Résumé des Commandes --- */
+.order-summary, .item-summary, .payment-summary, .total-summary {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.order-summary h3,
+.item-summary h3,
+.payment-summary h3,
+.total-summary h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.order-summary ul,
+.payment-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li,
+.payment-summary li {
+    margin: 5px 0;
+}
+
+/* --- Tableau des Articles --- */
+.item-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.item-summary th,
+.item-summary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-summary th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* --- Boutons --- */
+.confirmation-buttons {
+    margin-top: 30px;
+}
+
+.btn-print,
+.btn-home {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #555;
+    transition: background 0.3s;
+}
+
+.btn-print:hover,
+.btn-home:hover {
+    background: #7E7E7E;
+}

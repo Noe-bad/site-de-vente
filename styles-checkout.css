@@ -1,0 +1,288 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+	padding-bottom: 80px; /* Même hauteur que le footer */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    
+    width: 30px; /* Ajustez la largeur selon vos besoins */
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: contain; /* Conserve les proportions de l'image */
+    cursor: pointer; /* Curseur au survol */
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+.checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cart-summary {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-summary th, .cart-summary td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#promo-code-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#promo-code {
+    padding: 8px;
+    width: 80%;
+}
+
+#apply-promo-btn {
+    padding: 8px 15px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#promo-message {
+    color: green;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.cart-summary, .shipping-info, .payment-methods, .final-summary {
+    animation: fadeIn 0.5s ease-in;
+}
+/* Footer */
+
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Liens sociaux */
+footer .social-links a {
+    margin: 0 10px;
+    color: white; /* Couleur par défaut en blanc */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Style général de la section droite --- */
+.checkout-right {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* --- Onglets de navigation --- */
+.tab-container {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tab-button.active {
+    background: #222;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 -2px 0 #388E3C;
+}
+
+/* --- Contenu des onglets --- */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* --- Formulaires --- */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* --- Champs de paiement en ligne --- */
+.input-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    height: 30px;
+}
+
+/* --- Boutons --- */
+.payment-button {
+    display: flex;
+    justify-content: flex-end; /* Bouton aligné à droite */
+    margin-top: 20px;
+}
+
+.btn-pay {
+    background: #222;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-pay:hover {
+    background: #f9f9f9;
+	color: black;
+    transform: translateY(-2px);
+}
+
+.btn-next {
+    background: #222;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-next:hover {
+    background:#f9f9f9;
+	color: black;
+}
+
+/* --- Bouton de confirmation désactivé --- */
+#confirm-button:disabled {
+    background-color: #222;
+    cursor: not-allowed;
+}
+
+#confirm-button:active {
+    transform: scale(0.98);
+}
+
+/* --- Réactivité Mobile --- */
+@media (max-width: 768px) {
+    .tab-container {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        padding: 8px 0;
+    }
+
+    .input-group-row {
+        flex-direction: column;
+    }
+
+    .payment-button {
+        justify-content: center;
+    }
+}
+

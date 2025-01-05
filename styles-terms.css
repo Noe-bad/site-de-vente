@@ -1,0 +1,123 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    
+    width: 30px; /* Ajustez la largeur selon vos besoins */
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: contain; /* Conserve les proportions de l'image */
+    cursor: pointer; /* Curseur au survol */
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+main {
+    padding: 40px;
+}
+
+h2, h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.terms-list p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.terms-list h3 {
+    margin-top: 20px;
+}
+
+.validation {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.validation button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.validation button:hover {
+    background-color: #218838;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .terms-list {
+        padding: 0 20px;
+    }
+}
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Liens sociaux */
+footer .social-links a {
+    margin: 0 10px;
+    color: white; /* Couleur par défaut en blanc */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}

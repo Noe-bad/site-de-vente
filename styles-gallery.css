@@ -1,0 +1,138 @@
+
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    
+    width: 30px; /* Ajustez la largeur selon vos besoins */
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: contain; /* Conserve les proportions de l'image */
+    cursor: pointer; /* Curseur au survol */
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+header.banner {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header.banner h1 {
+    margin: 0;
+    color: #222;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 300px; /* Définit une hauteur maximale pour éviter les grandes images */
+    background-color: #f4f4f4;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background: #f9f9f9;
+	color: black;
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Liens sociaux */
+footer .social-links a {
+    margin: 0 10px;
+    color: white; /* Couleur par défaut en blanc */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}

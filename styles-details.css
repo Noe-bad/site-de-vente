@@ -1,0 +1,188 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    
+    width: 30px; /* Ajustez la largeur selon vos besoins */
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: contain; /* Conserve les proportions de l'image */
+    cursor: pointer; /* Curseur au survol */
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+/* Toile Details */
+.toile-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.toile-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    cursor: zoom-in;
+}
+
+.toile-info {
+    max-width: 500px;
+}
+
+.toile-info h1 {
+    font-size: 28px;
+}
+
+.toile-info p {
+    margin: 10px 0;
+}
+
+.toile-info .price {
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.toile-info .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #222;
+    font-size: 14px;
+}
+
+/* Informations supplémentaires */
+.additional-info {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+.additional-info h2 {
+    margin-bottom: 10px;
+}
+
+/* Toiles similaires */
+.similar-toiles {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.similar-toiles h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+	max-height: 300px; /* Définit une hauteur maximale pour éviter les grandes images */
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.details-button {
+    display: inline-block;
+    background: #222;
+	color: white;
+    margin: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Liens sociaux */
+footer .social-links a {
+    margin: 0 10px;
+    color: white; /* Couleur par défaut en blanc */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}
+
+/* Notification d'ajout au panier */
+.added-notification {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+/* Styles du bouton ajouter au panier */
+.add-to-cart-btn {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.add-to-cart-btn:active {
+    background-color: #f9f9f9;
+	color: black;
+}

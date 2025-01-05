@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passage à la Caisse - ArtGallery</title>
+    <link rel="stylesheet" href="styles-checkout.css">
+	<link rel="website icon" type="jpg" href="G1.jpg">
+    <script src="script-checkout.js" defer></script>
+</head>
+<body>
+        <!-- Bandeau supérieur -->
+    <header class="header">
+        <div class="logo"href="contact.html">ArtGallery</div>
+		<nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="checkout.html"><img src="panier.png" alt="Panier" class="cart-icon"></a>
+        </div>
+    </header>
+
+    <!-- Panier et formulaire de paiement -->
+    <main class="checkout-container">
+        <!-- Panier -->
+        <section class="cart-summary">
+            <h2>🛒 Récapitulatif du Panier</h2>
+            <table id="cart-items">
+			<!-- Dynamique via JS -->
+			</table>
+			<p id="total-price">Total Général : 0€</p>
+			
+
+            
+            <div id="promo-code-section">
+                <input type="text" id="promo-code" placeholder="Code promo">
+                <button id="apply-promo-btn">Appliquer</button>
+                <p id="promo-message"></p>
+            </div>
+        </section>
+
+	
+	
+	<section class="checkout-right">
+    <!-- Onglets de navigation -->
+    <div class="tab-container">
+        <button class="tab-button active" id="tab-shipping">🚚 Informations de Livraison</button>
+        <button class="tab-button" id="tab-payment">💳 Informations de Paiement</button>
+    </div>
+
+    <!-- Contenu des onglets -->
+    <div class="tab-content active" id="content-shipping">
+        <h2>🚚 Informations de Livraison</h2>
+        <form id="shipping-form">
+            <div class="input-group">
+                <label for="first-name">Prénom</label>
+                <input type="text" id="first-name" placeholder="Prénom" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Nom</label>
+                <input type="text" id="last-name" placeholder="Nom" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" placeholder="Téléphone" required>
+            </div>
+            <div class="input-group">
+                <label for="address">Adresse</label>
+                <input type="text" id="address" placeholder="Adresse complète" required>
+            </div>
+            <div class="input-group">
+                <label for="city">Ville</label>
+                <input type="text" id="city" placeholder="Ville" required>
+            </div>
+            <div class="input-group">
+                <label for="postal-code">Code Postal</label>
+                <input type="text" id="postal-code" placeholder="Code Postal" required>
+            </div>
+            <div class="input-group">
+                <label for="country">Pays</label>
+                <input type="text" id="country" placeholder="Pays" required>
+            </div>
+            <div class="input-group">
+                <label for="instructions">Instructions spéciales</label>
+                <textarea id="instructions" placeholder="Exemple : Laisser le colis devant la porte"></textarea>
+            </div>
+            <button type="button" id="to-payment" class="btn-next">Suivant : Paiement</button>
+        </form>
+    </div>
+
+	<div class="tab-content" id="content-payment">
+		<h2>💳 Informations de Paiement</h2>
+		<form id="payment-form">
+			<div class="input-group">
+				<label for="card-number">Numéro de carte</label>
+				<input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+			</div>
+			<div class="input-group">
+				<label for="card-name">Nom sur la carte</label>
+				<input type="text" id="card-name" placeholder="Nom complet" required>
+			</div>
+			<div class="input-group-row">
+            <div class="input-group">
+                <label for="expiry-date">Date d'expiration</label>
+                <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" required>
+            </div>
+            <div class="input-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+            </div>
+			</div>
+			<div class="payment-icons">
+            <img src="visa.png" alt="Visa">
+            <img src="mtc.png" alt="MasterCard">
+            <img src="pp.jpg" alt="PayPal">
+			</div>
+       
+		</form>
+	</div>
+
+</section>
+
+    <!-- Résumé -->
+    <section class="final-summary">
+        <h2>📝 Récapitulatif Final</h2>
+        <p id="final-total">Montant Total : 0€</p>
+        <label>
+            <input type="checkbox" required>
+            J'accepte les <a href="terms.html">termes et conditions</a>
+        </label>
+        <button type="button" id="confirm-payment" class="btn-pay">Confirmer et Payer</button>
+
+    </section>
+</section>
+    </main>
+
+   <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ArtGallery. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

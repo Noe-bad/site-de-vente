@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Nos Collections Exclusives</title>
+    <link rel="stylesheet" href="styles-gallery.css">
+	<link rel="website icon" type="jpg" href="G1.jpg">
+    <script src="script-gallery.js" defer></script>
+</head>
+<body>
+    
+        <!-- Bandeau supérieur -->
+    <header class="header">
+        <div class="logo"href="contact.html">ArtGallery</div>
+		<nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="about.html">À Propos</a></li>
+               
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="checkout.html"><img src="panier.png" alt="Panier" class="cart-icon"></a>
+        </div>
+    </header>
+	
+	<!-- Bannière -->
+    <header class="banner">
+        <h1>Nos Collections Exclusives</h1>
+        <p>Explorez des œuvres uniques pour illuminer votre espace.</p>
+    </header>
+
+    <!-- Système de filtrage -->
+    <section class="filters">
+        <select id="theme-filter">
+            <option value="all">Tous les thèmes</option>
+            <option value="abstrait">Paysage</option>
+            <option value="nature">Fruit</option>
+            <option value="moderne">Animal</option>
+        </select>
+        <select id="price-filter">
+            <option value="all">Tous les prix</option>
+            <option value="low">Moins de 800€</option>
+            <option value="medium">800€ - 1200€</option>
+            <option value="high">Plus de 1200€</option>
+        </select>
+        <select id="popularity-filter">
+            <option value="all">Popularité</option>
+            <option value="high">Les plus populaires</option>
+            <option value="new">Nouveautés</option>
+        </select>
+    </section>
+
+    <!-- Grille des toiles -->
+    <section class="gallery-grid">
+        <div class="card" data-theme="abstrait" data-price="high" data-popularity="high">
+            <img src="tab_stvictoire.jpg" alt="Toile Abstraite">
+            <h3>La Montagne Sainte-Victoire</h3>
+            <p>Quand la montagne murmure des histoires.</p>
+            <p class="price">2100€</p>
+            <a href="toile-details.html" class="button">Voir Détails</a>
+
+        </div>
+        <div class="card" data-theme="nature" data-price="low" data-popularity="new">
+            <img src="tab_citron.jpg" alt="Toile Nature">
+            <h3>Les Citrons</h3>
+            <p>L’or du soleil capturé dans un panier tressé</p>
+            <p class="price">600€</p>
+            <a href="toile-details2.html" class="button">Voir Détails</a>
+
+        </div>
+        <div class="card" data-theme="moderne" data-price="medium" data-popularity="high">
+            <img src="tab_eccureuil.jpg" alt="Toile Moderne">
+            <h3>L'Écureuil et les Cerises</h3>
+            <p>Un festin sucré</p>
+            <p class="price">900€</p>
+            <a href="toile-details3.html" class="button">Voir Détails</a>
+
+        </div>
+		        <div class="card" data-theme="abstrait" data-price="high" data-popularity="high">
+            <img src="tab_ours.jpg" alt="Toile Abstraite">
+            <h3>L'ours en peluche</h3>
+            <p>Une pièce vibrante pour les amateurs d'art moderne.</p>
+            <p class="price">1300€</p>
+            <a href="toile-details4.html" class="button">Voir Détails</a>
+
+        </div>
+        <div class="card" data-theme="nature" data-price="medium" data-popularity="new">
+            <img src="tab_oiseau.jpg" alt="Toile Nature">
+            <h3>L'Oiseau Bleu</h3>
+            <p>Un instant figé où le chant du bleu rencontre le silence du bois.</p>
+            <p class="price">1000€</p>
+            <a href="toile-details5.html" class="button">Voir Détails</a>
+
+
+
+    </section>
+
+	<!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ArtGallery. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
